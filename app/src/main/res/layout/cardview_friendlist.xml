@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/background"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pfpFriends"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/bobobokebab"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/nameFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amic1"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="30dp"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/conexionFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ultima conexion: En linea"
+            android:textSize="24dp"
+            android:layout_marginStart="105dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
