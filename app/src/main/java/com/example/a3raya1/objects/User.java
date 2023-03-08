@@ -1,4 +1,4 @@
-package com.example.a3raya1;
+package com.example.a3raya1.objects;
 
 import java.io.Serializable;
 
@@ -11,6 +11,8 @@ public class User implements Serializable {
     private int pPerdidas;
     private int winRate;
     private int elo;
+    private int fichas = 3;
+    private int skin;
 
     public User(String username, String contraseña, int pJugadas, int pGanadass, int pPerdidas, int winRate, int elo) {
         this.username = username;
@@ -20,6 +22,9 @@ public class User implements Serializable {
         this.pPerdidas = pPerdidas;
         this.winRate = winRate;
         this.elo = elo;
+    }
+
+    public User() {
     }
 
     public User(String username, String contraseña) {
@@ -38,6 +43,22 @@ public class User implements Serializable {
 
     //TODO: calcular winRate
 
+
+    public int getSkin() {
+        return skin;
+    }
+
+    public void setSkin(int skin) {
+        this.skin = skin;
+    }
+
+    public int getFichas() {
+        return fichas;
+    }
+
+    public void setFichas(int fichas) {
+        this.fichas = this.fichas-fichas;
+    }
 
     public String getUsername() {
         return username;

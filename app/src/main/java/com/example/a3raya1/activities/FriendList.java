@@ -9,11 +9,10 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.a3raya1.FriendListAdapter;
-import com.example.a3raya1.FriendsListList;
-import com.example.a3raya1.ListAdapter;
+import com.example.a3raya1.adapters.FriendListAdapter;
+import com.example.a3raya1.objects.FriendsListList;
 import com.example.a3raya1.R;
-import com.example.a3raya1.User;
+import com.example.a3raya1.objects.User;
 
 import java.util.ArrayList;
 

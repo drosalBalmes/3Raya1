@@ -13,7 +13,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.a3raya1.R;
-import com.example.a3raya1.User;
+import com.example.a3raya1.objects.User;
 
 public class IniciarSesion extends AppCompatActivity {
     CheckBox chckbxShow;
@@ -47,8 +47,8 @@ public class IniciarSesion extends AppCompatActivity {
 
 
     public void toMenu2(View view) {
-        if (user.getUsername().equals(inputUsername.getText().toString()) || inputUsername.getText().toString().equals("") ){
-            if (user.getContraseña().equals(inputContra.getText().toString()) || inputUsername.getText().toString().equals("")){
+        if (user.getUsername().equals(inputUsername.getText().toString()) || inputUsername.getText().toString().equals("") || inputUsername.getText().toString().equals(null) ){
+            if (user.getContraseña().equals(inputContra.getText().toString()) || inputContra.getText().toString().equals("") || inputContra.getText().toString().equals(null)){
                 Intent intent = new Intent(IniciarSesion.this, Menu.class);
                 intent.putExtra("user", user);
                 startActivity(intent);

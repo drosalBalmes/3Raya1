@@ -1,9 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".activities.PayCurrency">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/txtTarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:text="Numero de tarjeta:"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/inputTarjeta"
+        android:layout_width="239dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/txtTarjeta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <TextView
+        android:id="@+id/txtNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/inputTarjeta"
+        android:layout_centerHorizontal="true"
+        android:text="Nombre del titular: "
+        android:textSize="24dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/inputNom"
+        android:layout_width="236dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/txtNom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"/>
+    <TextView
+        android:id="@+id/txtCv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/inputNom"
+        android:layout_centerHorizontal="true"
+        android:text="CV:"
+        android:textSize="24dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/inputCv"
+        android:layout_width="236dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/txtCv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/forwardarrow"
+        android:layout_below="@id/inputCv"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/txtCv"/>
+
+</RelativeLayout>

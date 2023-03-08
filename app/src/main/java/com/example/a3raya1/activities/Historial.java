@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.example.a3raya1.ListAdapter;
-import com.example.a3raya1.ListElement;
+import com.example.a3raya1.adapters.ListAdapter;
+import com.example.a3raya1.objects.ListElement;
 import com.example.a3raya1.R;
 
 import java.util.ArrayList;

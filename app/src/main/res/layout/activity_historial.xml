@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,34 +9,19 @@
     tools:context=".activities.Historial">
 
 
-    <ImageView
-        android:id="@+id/backarrow"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="0dp"
-        app:srcCompat="@drawable/bckarrow" />
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/titol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_toRightOf="@id/backarrow"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:text="Historial"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:textSize="48dp" />
 
-        <TextView
-            android:id="@+id/titol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Historial"
-            android:textColor="@color/black"
-            android:textSize="48dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
-
-</RelativeLayout>
+</LinearLayout>

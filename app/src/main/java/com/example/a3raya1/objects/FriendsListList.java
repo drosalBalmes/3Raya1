@@ -1,4 +1,4 @@
-package com.example.a3raya1;
+package com.example.a3raya1.objects;
 
 public class FriendsListList {
 

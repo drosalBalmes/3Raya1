@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.a3raya1.R;
-import com.example.a3raya1.User;
+import com.example.a3raya1.objects.User;
 
 public class CrearSesion extends AppCompatActivity {
     EditText inputContra;
@@ -36,14 +36,11 @@ public class CrearSesion extends AppCompatActivity {
 
 
     public void show(CheckBox checkBox, EditText editText){
-        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView,boolean isChecked) {
-                if ((checkBox.isChecked())) {
-                    editText.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_NORMAL);
-                } else {
-                    editText.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                }
+        checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if ((checkBox.isChecked())) {
+                editText.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_NORMAL);
+            } else {
+                editText.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_PASSWORD);
             }
         });
     }

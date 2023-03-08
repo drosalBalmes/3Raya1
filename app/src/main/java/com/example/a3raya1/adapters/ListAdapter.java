@@ -1,16 +1,17 @@
-package com.example.a3raya1;
+package com.example.a3raya1.adapters;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.a3raya1.objects.ListElement;
+import com.example.a3raya1.R;
 
 import java.util.List;
 
@@ -55,6 +56,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
         void bindData(final ListElement item){
             name.setText(item.getName());
+            if (item.getWinLose().equals("Win")){
+                winLose.setTextColor(Color.rgb(0,255,0));
+            } else{
+                winLose.setTextColor(Color.rgb(255,0,0));
+            }
             winLose.setText(item.getWinLose());
         }
 

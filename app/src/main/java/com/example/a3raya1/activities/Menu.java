@@ -8,7 +8,7 @@ import android.view.View;
 
 
 import com.example.a3raya1.R;
-import com.example.a3raya1.User;
+import com.example.a3raya1.objects.User;
 
 public class Menu extends AppCompatActivity {
     User user;
@@ -51,6 +51,12 @@ public class Menu extends AppCompatActivity {
 
     public void toProfile(View view){
         Intent intent = new Intent(Menu.this,Profile.class);
+        intent.putExtra("user",user);
+        startActivity(intent);
+    }
+
+    public void toPlayMenu(View view){
+        Intent intent = new Intent(Menu.this,EscogerJuego.class);
         intent.putExtra("user",user);
         startActivity(intent);
     }

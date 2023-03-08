@@ -90,6 +90,7 @@
         android:elevation="10dp"
         android:layout_marginTop="279dp"
         android:text="Jugar"
+        android:onClick="toPlayMenu"
         android:background="@drawable/sombra"
         app:cornerRadius="15dp"/>
 

@@ -1,4 +1,4 @@
-package com.example.a3raya1;
+package com.example.a3raya1.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.material.transition.Hold;
+import com.example.a3raya1.objects.FriendsListList;
+import com.example.a3raya1.R;
 
 import java.util.ArrayList;
 

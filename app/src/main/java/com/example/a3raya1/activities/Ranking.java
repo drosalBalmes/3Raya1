@@ -8,8 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.a3raya1.FriendListAdapter;
-import com.example.a3raya1.FriendsListList;
+import com.example.a3raya1.adapters.FriendListAdapter;
+import com.example.a3raya1.objects.FriendsListList;
 import com.example.a3raya1.R;
 
 import java.util.ArrayList;
@@ -44,6 +44,5 @@ public class Ranking extends AppCompatActivity implements AdapterView.OnItemClic
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         FriendsListList list = rankingList.get(position);
-        Toast.makeText(Ranking.this, "Amic: " + list.getFriendName(), Toast.LENGTH_SHORT).show();
     }
 }

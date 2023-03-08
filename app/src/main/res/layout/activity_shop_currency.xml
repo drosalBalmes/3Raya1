@@ -8,7 +8,6 @@
     android:background="@color/background"
     tools:context=".activities.ShopCurrency">
 
-
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="110dp"
@@ -23,6 +22,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/background"
             android:scaleType="fitCenter"
+            android:onClick="toPay"
             android:src="@drawable/moneda" />
 
         <TextView
@@ -48,6 +48,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/background"
             android:scaleType="fitCenter"
+            android:onClick="toPay"
             android:src="@drawable/moneda" />
         <TextView
             android:id="@+id/txt_oferta2"
@@ -64,6 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/linear1"
         android:layout_margin="10dp"
+
         android:orientation="vertical">
         <ImageButton
             android:id="@+id/oferta3"
@@ -72,6 +74,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/background"
             android:scaleType="fitCenter"
+            android:onClick="toPay"
             android:src="@drawable/moneda" />
         <TextView
             android:id="@+id/txt_oferta3"
@@ -97,6 +100,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/background"
             android:scaleType="fitCenter"
+            android:onClick="toPay"
             android:src="@drawable/moneda" />
         <TextView
             android:id="@+id/txt_oferta4"
