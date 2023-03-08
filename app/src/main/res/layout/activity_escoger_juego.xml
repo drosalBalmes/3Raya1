@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.EscogerJuego">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
+        <Button
+            android:id="@+id/rankedButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="toPlayChose"
+            android:text="Ranked"/>
+
+        <Button
+            android:id="@+id/casualButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="toPlayChose"
+            android:layout_toRightOf="@id/rankedButton"
+            android:text="Casual"/>
+
+        <Button
+            android:id="@+id/offlineButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="toSettingsOff"
+            android:layout_below="@id/rankedButton"
+            android:text="Offline"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/rankedButton"
+            android:layout_below="@id/casualButton"
+            android:onClick="toCustomLobbyCustom"
+            android:text="Custom"/>
+
+
+        <TextView
+            android:id="@+id/txt_inputCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/offlineButton"
+            android:layout_centerHorizontal="true"
+            android:text="Join Custom:"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+
+        <EditText
+            android:id="@+id/inputCustom"
+            android:layout_width="210dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/txt_inputCustom"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_edittext" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relativeLayout"
+        android:onClick="toCustomLobbyJoin"
+        android:text="Join"/>
+
+
+</RelativeLayout>
